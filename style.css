@@ -797,8 +797,36 @@ td:nth-child(4) {
     font-size: 16px;
   }
 }
+@media only screen and (min-width: 2100px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 @media only screen and (min-width: 2400px) {
   html {
     font-size: 20px;
+  }
+}
+@media only screen and (min-width: 2700px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 3300px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 3600px) {
+  html {
+    font-size: 28px;
   }
 }
