@@ -491,6 +491,7 @@ tr {
 }
 table {
   width: 100%;
+border-top: 1px solid #dee3e6
 }
 td:nth-child(1) {
   padding: 1 rem 0;
@@ -527,7 +528,7 @@ tbody {
 .st_Column_2 {
   padding-left: 1.766rem;
   cursor: pointer;
-  opacity: 0.8;
+/*   opacity: 0.8; */
 }
 .st_Column_3 {
   padding-left: 0.6083rem;
