@@ -334,7 +334,7 @@ header {
   background-color: #f3f6f9;
   font-weight: bold;
   font-size: 0.84rem;
-/*   margin-top: 2px; */
+
   color: #676767;
   letter-spacing: 1.67px;
   opacity: 0.8;
@@ -491,7 +491,6 @@ tr {
 }
 table {
   width: 100%;
-border-top: 1px solid #dee3e6
 }
 td:nth-child(1) {
   padding: 1 rem 0;
@@ -528,7 +527,7 @@ tbody {
 .st_Column_2 {
   padding-left: 1.766rem;
   cursor: pointer;
-/*   opacity: 0.8; */
+  opacity: 0.8;
 }
 .st_Column_3 {
   padding-left: 0.6083rem;
@@ -770,6 +769,19 @@ td:nth-child(4) {
     padding-left: 0.5rem;
     /* width: 15.625vw; */
     width: 100%;
+  }
+
+  #d02 {
+    font-size: 0.834rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #000;
+    padding-left: 1.0166rem;
+  }
+  .st_Column_2 {
+    padding-left: 0.766rem;
+    cursor: pointer;
+    opacity: 0.8;
   }
 }
 
