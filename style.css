@@ -723,6 +723,7 @@ td:nth-child(4) {
   ._three {
     font-size: 0.7rem;
   }
+
   .Arrow_forward {
     width: 0.75rem;
     height: 0.75rem;
@@ -756,9 +757,12 @@ td:nth-child(4) {
   }
   .sst_Column2 {
     white-space: normal;
+    width: auto;
   }
   .st_Column_3 {
     white-space: normal;
+
+    width: auto;
   }
   #Button {
     height: 2.5rem;
