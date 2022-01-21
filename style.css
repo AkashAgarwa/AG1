@@ -61,6 +61,7 @@ header {
 .bell {
   width: 1.2rem;
   height: 1.408rem;
+  cursor: pointer;
   background-color: #f2f4f8;
 }
 .john_1 {
@@ -71,6 +72,7 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
+  cursor: pointer;
 }
 .John {
   padding-left: calc(min(1.875rem, 2vw));
@@ -81,6 +83,7 @@ header {
 .profile {
   width: 2.5rem;
   height: 2.5rem;
+  cursor: pointer;
 }
 #johnSmith {
   font-size: 1.17rem;
@@ -297,24 +300,25 @@ header {
   padding-left: calc(1.16rem + 0.84rem);
   display: flex;
   align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Groups5 > span {
+  color: gray;
+  opacity: 50%;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: left;
-  color: #fff;
-  cursor: pointer;
-}
-.Groups5:hover {
-  background-color: #e20074;
-}
-.Groups5 > span {
-  color: gray;
-  opacity: 50%;
+
   font-size: 0.916rem;
 }
-
+.Groups5 > span:hover {
+  color: #e20074;
+}
 .Gr1 {
   width: 100%;
   background-color: #f3f6f9;
@@ -360,6 +364,7 @@ header {
   min-width: calc(max(22%, 18.33rem));
   max-width: calc(max(22%, 18.33rem));
   height: 100%;
+  cursor: pointer;
   background-color: white;
   font-size: 0.7rem;
   color: rgb(168, 167, 167);
@@ -536,6 +541,11 @@ tbody {
   cursor: pointer;
   font-weight: 400;
   opacity: 0.8;
+  display: inline;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .sst_Column {
   display: flex;
@@ -551,6 +561,11 @@ tbody {
   font-weight: 400;
   opacity: 0.8;
   color: #4a4a4a;
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
 }
 td:nth-child(3) {
   color: #4a4a4a;
@@ -684,15 +699,15 @@ td:nth-child(4) {
   .Gr6 {
     height: 0.8333rem;
     float: right;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin-top: 0.5rem;
   }
   .Showing-10---20 {
     padding-right: 0.925rem;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .Goto {
-    padding-right: 0.2375rem;
+    padding-right: 0.4675rem;
   }
   .Rectangle {
     width: 1.1415rem;
@@ -702,16 +717,16 @@ td:nth-child(4) {
   .Rectangle-Copy-17 {
     width: 0.75rem;
     height: 0.75rem;
-    margin: 0 0.3335rem;
+    margin: 0 0.6635rem;
     border-radius: 0.4175rem;
   }
   ._three {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .Arrow_forward {
     width: 0.75rem;
     height: 0.75rem;
-    margin: 0 0.3335rem;
+    margin: 0 0.6635rem;
     border-radius: 0.375rem;
   }
   .main {
@@ -739,7 +754,12 @@ td:nth-child(4) {
   table {
     height: auto;
   }
-
+  .sst_Column2 {
+    white-space: normal;
+  }
+  .st_Column_3 {
+    white-space: normal;
+  }
   #Button {
     height: 2.5rem;
   }
