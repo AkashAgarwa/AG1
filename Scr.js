@@ -1,4 +1,5 @@
-function Sorting()
+var n=0;
+function Sorting(n)
 {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("tableF");
@@ -9,8 +10,8 @@ function Sorting()
       rows = table.rows;
       for (i = 1; i < (rows.length - 1); i++) {
         shouldSwitch = false;
-        x = rows[i].getElementsByTagName("td")[0];
-        y = rows[i + 1].getElementsByTagName("td")[0];
+        x = rows[i].getElementsByTagName("td")[n];
+        y = rows[i + 1].getElementsByTagName("td")[n];
         if (dir == "asc") {
           if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
             shouldSwitch = true;
@@ -59,14 +60,14 @@ function Search()
 function Bwrd(){
     var box= document.getElementById("box_F")
     var wid=box.clientWidth+5;
-    console.log(wid)
+    // console.log(wid)
            document.getElementById("recommendedCart").scrollBy(-wid,0)
     }
 
  function Fwrd(){
     var box= document.getElementById("box_F")
     var wid=box.clientWidth+5;
-    console.log(wid)
+    // console.log(wid)
         document.getElementById("recommendedCart").scrollBy(wid,0);
     }
 

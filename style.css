@@ -630,6 +630,12 @@ td:nth-child(2) {
   color: #4a4a4a;
   font-size: 0.9166rem;
 }
+.d10 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3vw;
+}
 td:nth-child(3) {
   color: #4a4a4a;
   font-size: 0.9167rem;

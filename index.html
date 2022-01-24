@@ -116,9 +116,7 @@
               <img src="/Images/Group_icon.png" alt="" width="26px" />
             </div>
             <div class="Gr2_2">
-              <div id="p" title="1HRCare Talent Scout Sr.Managers">
-                1HRCare Talent Scout Sr.Managers JohnSmith
-              </div>
+              <div id="p" title="ABC Security Group">ABC Security Group</div>
               <div id="p1" title="JohnSmith">JohnSmith</div>
             </div>
           </div>
@@ -132,10 +130,8 @@
               <img src="/Images/Group_icon.png" alt="" width="26px" />
             </div>
             <div class="Gr2_2">
-              <div id="p" title="1HRCare Talent Scout Sr.Managers">
-                1HRCare Talent Scout Sr.Managers JohnSmith
-              </div>
-              <div id="p1" title="JohnSmith">JohnSmith</div>
+              <div id="p" title="ATeam">ATeam</div>
+              <div id="p1" title="Uche Ogbonnah">Uche Ogbonna</div>
             </div>
           </div>
           <div class="Gr2_3">
@@ -148,10 +144,8 @@
               <img src="/Images/Group_icon.png" alt="" width="26px" />
             </div>
             <div class="Gr2_2">
-              <div id="p" title="1HRCare Talent Scout Sr.Managers">
-                1HRCare Talent Scout Sr.Managers JohnSmith
-              </div>
-              <div id="p1" title="JohnSmith">JohnSmith</div>
+              <div id="p" title="Ar Orange Crush">Ar Orange Crush</div>
+              <div id="p1" title="Siri Jakobsson">Siri Jakobsson</div>
             </div>
           </div>
           <div class="Gr2_3">
@@ -164,10 +158,80 @@
               <img src="/Images/Group_icon.png" alt="" width="26px" />
             </div>
             <div class="Gr2_2">
-              <div id="p" title="1HRCare Talent Scout Sr.Managers">
-                1HRCare Talent Scout Sr.Managers JohnSmith
+              <div id="p" title="AppRas">AppRas</div>
+              <div id="p1" title="Sebastian Bennett">Sebastian Bennett</div>
+            </div>
+          </div>
+          <div class="Gr2_3">
+            <img src="/Images/+Add_pack Copy.png" alt="" width="20px" />
+          </div>
+        </div>
+        <div class="Gr2_0">
+          <div class="Gr2_1_outer">
+            <div class="Gr2_1">
+              <img src="/Images/Group_icon.png" alt="" width="26px" />
+            </div>
+            <div class="Gr2_2">
+              <div id="p" title="Br HRCare Talent Scout Sr.Managers">
+                Br HRCare Talent Scout Sr.Managers
               </div>
-              <div id="p1" title="JohnSmith">JohnSmith</div>
+              <div id="p1" title="Saami Al Samad">Saami Al Samad</div>
+            </div>
+          </div>
+          <div class="Gr2_3">
+            <img src="/Images/+Add_pack Copy.png" alt="" width="20px" />
+          </div>
+        </div>
+        <div class="Gr2_0">
+          <div class="Gr2_1_outer">
+            <div class="Gr2_1">
+              <img src="/Images/Group_icon.png" alt="" width="26px" />
+            </div>
+            <div class="Gr2_2">
+              <div id="p" title="CBE Security groups ">CBE Security groups</div>
+              <div id="p1" title="Phạm Quốc Hùng">Phạm Quốc Hùng</div>
+            </div>
+          </div>
+          <div class="Gr2_3">
+            <img src="/Images/+Add_pack Copy.png" alt="" width="20px" />
+          </div>
+        </div>
+        <div class="Gr2_0">
+          <div class="Gr2_1_outer">
+            <div class="Gr2_1">
+              <img src="/Images/Group_icon.png" alt="" width="26px" />
+            </div>
+            <div class="Gr2_2">
+              <div id="p" title="D HRTeam ">D HRTeam</div>
+              <div id="p1" title="María Paula ">María Paula</div>
+            </div>
+          </div>
+          <div class="Gr2_3">
+            <img src="/Images/+Add_pack Copy.png" alt="" width="20px" />
+          </div>
+        </div>
+        <div class="Gr2_0">
+          <div class="Gr2_1_outer">
+            <div class="Gr2_1">
+              <img src="/Images/Group_icon.png" alt="" width="26px" />
+            </div>
+            <div class="Gr2_2">
+              <div id="p" title="Orange Crush">Orange Crush</div>
+              <div id="p1" title="Lisandro Matos">Lisandro Matos</div>
+            </div>
+          </div>
+          <div class="Gr2_3">
+            <img src="/Images/+Add_pack Copy.png" alt="" width="20px" />
+          </div>
+        </div>
+        <div class="Gr2_0">
+          <div class="Gr2_1_outer">
+            <div class="Gr2_1">
+              <img src="/Images/Group_icon.png" alt="" width="26px" />
+            </div>
+            <div class="Gr2_2">
+              <div id="p" title="RasApp">RasApp</div>
+              <div id="p1" title="Klavdia Dedova">Klavdia Dedova</div>
             </div>
           </div>
           <div class="Gr2_3">
@@ -185,7 +249,8 @@
               type="search"
               id="SearchBar"
               placeholder="Find a Group"
-              onclick="Search()"
+              onkeyup="Search()"
+              onsearch="Search()"
             />
             <div id="Button">+NewGroup</div>
           </div>
@@ -206,12 +271,19 @@
                   </div>
 
                   <div id="d02">GROUP NAME</div>
-                  <div id="Sort" onclick="Sorting()">
+                  <div id="Sort" onclick="Sorting(0)">
                     <img src="/Images/Sorting.png" alt="" width="100%" />
                   </div>
                 </div>
               </th>
-              <th>GROUP OWNER</th>
+              <th>
+                <div class="d10">
+                  <d class="d11"> GROUP OWNER</d>
+                  <d id="Sort" onclick="Sorting(1)">
+                    <img src="/Images/Sorting.png" alt="" width="100%"
+                  /></d>
+                </div>
+              </th>
               <th>CREATED ON</th>
               <th style="text-align: center">ACTION</th>
             </tr>
