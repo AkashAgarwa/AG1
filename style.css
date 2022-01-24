@@ -516,6 +516,7 @@ tbody {
   display: flex;
   align-items: center;
   padding-left: 0.08333rem;
+  padding-right: 2.5vw;
 }
 #d02 {
   font-size: 0.834rem;
@@ -523,6 +524,8 @@ tbody {
   letter-spacing: 0.5px;
   color: #000;
   padding-left: 2.0166rem;
+  display: flex;
+  width: 100%;
 }
 .st_Column {
   display: flex;
@@ -533,6 +536,11 @@ tbody {
   padding-left: 1.766rem;
   cursor: pointer;
   opacity: 0.8;
+}
+#Sort {
+  width: 1.25rem;
+  height: 0.583rem;
+  cursor: pointer;
 }
 .st_Column_3 {
   padding-left: 0.6083rem;
@@ -784,9 +792,9 @@ td:nth-child(4) {
   td:nth-child(1) {
     padding: 1rem 0;
   }
-  .Arrow {
+  /* .Arrow {
     display: none;
-  }
+  } */
   #SearchBar {
     padding: 0.8rem 0;
     border: radius 3px;

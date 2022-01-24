@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="Scr.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -83,17 +84,17 @@
       <div class="Gr1_1">
         <div>REOMMENDED GROUPS</div>
         <div class="Arrow">
-          <div class="Rectangle-Copy-17">
+          <div class="Rectangle-Copy-17" id="Bwd" onclick="Bwrd()">
             <img src="/Images/Arrow_back.png" width="100%" ;alt="" />
           </div>
 
-          <div class="img Arrow_forward">
+          <div class="img Arrow_forward" id="Fwd" onclick="Fwrd()">
             <img src="/Images/Arrow_forward.png" width="100%" ;alt="" />
           </div>
         </div>
       </div>
-      <div class="Gr2">
-        <div class="Gr2_0">
+      <div class="Gr2" id="recommendedCart">
+        <div class="Gr2_0" id="box_F">
           <div class="Gr2_1_outer">
             <div class="Gr2_1">
               <img src="/Images/Group_icon.png" alt="" width="26px" />
@@ -180,12 +181,17 @@
             <span id="AllGroups">ALLGROUPS</span>
           </div>
           <div class="Gr3_2">
-            <input type="search" id="SearchBar" placeholder="Find a Group" />
+            <input
+              type="search"
+              id="SearchBar"
+              placeholder="Find a Group"
+              onclick="Search()"
+            />
             <div id="Button">+NewGroup</div>
           </div>
         </div>
         <div class="tableBox">
-          <table class="Tab1">
+          <table class="Tab1" id="tableF">
             <colgroup>
               <col id="col1" />
               <col id="col2" />
@@ -200,6 +206,14 @@
                   </div>
 
                   <div id="d02">GROUP NAME</div>
+                  <div id="Sort" onclick="Sorting()">
+                    <img
+                      src="/Images/Sorting.png"
+                      alt=""
+                      width="100%"
+                      onclick="Sorting()"
+                    />
+                  </div>
                 </div>
               </th>
               <th>GROUP OWNER</th>
