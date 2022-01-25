@@ -16,7 +16,12 @@
   </head>
   <body>
     <header class="header1">
-      <div class="header">
+      <div class="box_S" id="boxx">Navigations</div>
+      <div class="x" id="cross" onclick="dis2()">X</div>
+      <div class="menu" id="menuu" onclick="dis()">
+        <img src="/Images/menu.jpg" alt="" width="100%" />
+      </div>
+      <div class="header" id="topBar">
         <div class="cloudAccess">
           <div class="ImgCloud">
             <img src="Images/cloud.png" width="100%" />
@@ -43,7 +48,7 @@
         </div>
       </div>
     </header>
-    <div class="aside">
+    <div class="aside" id="navBar">
       <div class="aside1">
         <div class="Groups">
           <span id="YourGroups">YOUR GROUPS/PACKS</span>
@@ -79,7 +84,7 @@
         &#160; &#160;&#160; <span>ALL PACKS</span>
       </div>
     </div>
-    <main class="main">
+    <main class="main" id="mainBar">
       <div class="Gr1"><span>ALL GROUPS:</span></div>
       <div class="Gr1_1">
         <div>REOMMENDED GROUPS</div>
@@ -249,7 +254,7 @@
               type="search"
               id="SearchBar"
               placeholder="Find a Group"
-              onkeyup="Search()"
+              onkeyup="Search1()"
               onsearch="Search()"
             />
             <div id="Button">+NewGroup</div>

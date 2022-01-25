@@ -14,6 +14,7 @@ body {
   margin: 0px;
   /* font-size: 12px; */
   padding: 0px;
+  cursor: pointer;
 }
 .header {
   box-sizing: border-box;
@@ -27,10 +28,56 @@ body {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
+.menu {
+  /* display: block; */
+  z-index: 3;
+  position: fixed;
+  top: 1.4rem;
+  left: 10px;
+  width: 2rem;
+  height: 2rem;
+  display: none;
+}
+.x {
+  z-index: 3;
+  position: fixed;
+  top: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  font-size: 1.4rem;
+  left: 15rem;
+  text-align: center;
+  padding: 0.3rem 0;
+  cursor: pointer;
+  display: none;
+  border: 1px solid #cbcbcb;
+}
+.box_S {
+  width: 18.4rem;
+  height: 4.583rem;
+  z-index: 3;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  font-size: 1.183rem;
+  color: #ea168b;
+  font-weight: 600;
+  text-align: left;
+  text-justify: center;
+  padding: 1.7rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
 header {
   position: sticky;
   z-index: 2;
   top: 0;
+  opacity: 1;
 }
 
 .cloudAccess {
@@ -116,7 +163,7 @@ header {
   background-color: white;
   display: flex;
   flex-direction: column;
-
+  z-index: 0;
   margin-top: 1rem;
 }
 
@@ -130,7 +177,10 @@ header {
   padding-right: 1.666rem;
   box-sizing: border-box;
   overflow: hidden;
+  z-index: 0;
   padding-bottom: 2rem;
+  /* position: fixed; */
+  opacity: 1;
 }
 
 .aside1 {
@@ -698,6 +748,13 @@ td:nth-child(4) {
 @media only screen and (max-width: 767px) {
   .aside {
     display: none;
+    z-index: 3;
+    margin-top: 0;
+    height: auto;
+    position: fixed;
+  }
+  .menu {
+    display: initial;
   }
   .Gr2_0 {
     min-width: 100%;
@@ -783,7 +840,9 @@ td:nth-child(4) {
   #Button {
     height: 2.5rem;
   }
-
+  #TH {
+    z-index: 0;
+  }
   th:nth-child(2),
   th:nth-child(3) {
     display: none;

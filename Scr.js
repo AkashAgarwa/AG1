@@ -37,8 +37,8 @@ function Sorting(n)
     }
   }
 
-function Search()
-{
+  const  Search = () => 
+  {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("SearchBar");
     filter = input.value.toUpperCase();
@@ -57,6 +57,19 @@ function Search()
     }
 }
 
+
+const debounce = function (fn, d) {
+  let timer;
+  return function () {
+  let context = this, args = arguments;
+  clearTimeout(timer);
+  timer = setTimeout(() => {
+          fn.apply(context, args);
+      }, d)
+  }
+}
+
+const Search1 = debounce(Search, 1000);
 function Bwrd(){
     var box= document.getElementById("box_F")
     var wid=box.clientWidth+5;
@@ -69,5 +82,24 @@ function Bwrd(){
     var wid=box.clientWidth+5;
     // console.log(wid)
         document.getElementById("recommendedCart").scrollBy(wid,0);
+    }  
+    function dis(){
+    
+      document.getElementById("navBar").style.display="initial";
+      document.getElementById("cross").style.display="initial";
+      document.getElementById("menuu").style.display="none";
+      document.getElementById("boxx").style.display="initial";
+      document.getElementById("topBar").style.opacity = "0.2";
+    
+      document.getElementById("mainBar").style.opacity = "0.4";
     }
-
+    function dis2(){
+    
+      document.getElementById("navBar").style.display="none";
+      document.getElementById("cross").style.display="none";
+      document.getElementById("menuu").style.display="initial";
+      document.getElementById("boxx").style.display="none";
+      document.getElementById("topBar").style.opacity = "1";
+    
+      document.getElementById("mainBar").style.opacity = "1";
+    }
