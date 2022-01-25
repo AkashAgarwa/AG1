@@ -61,7 +61,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
+  /* display: none; */
   font-size: 1.183rem;
   color: #ea168b;
   font-weight: 600;
@@ -164,6 +164,7 @@ header {
   display: flex;
   flex-direction: column;
   z-index: 0;
+
   margin-top: 1rem;
 }
 
@@ -747,11 +748,18 @@ td:nth-child(4) {
 }
 @media only screen and (max-width: 767px) {
   .aside {
-    display: none;
     z-index: 3;
     margin-top: 0;
-    height: auto;
+    height: 100%;
+    /* width: 60%; */
+    /* left: -100%; */
+    transform: translateX(-100%);
     position: fixed;
+    transition: 1s ease;
+  }
+  .box_S {
+    transform: translateX(-100%);
+    transition: 1s ease;
   }
   .menu {
     display: initial;
@@ -822,7 +830,7 @@ td:nth-child(4) {
     height: auto;
   }
   .header {
-    padding-left: 1.667rem;
+    padding-left: 3.667rem;
     padding-right: 1.667rem;
   }
   table {

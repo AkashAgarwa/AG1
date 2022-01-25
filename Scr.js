@@ -82,24 +82,36 @@ function Bwrd(){
     var wid=box.clientWidth+5;
     // console.log(wid)
         document.getElementById("recommendedCart").scrollBy(wid,0);
-    }  
+    } 
+    
+function dis_1(){
+  document.getElementById("cross").style.display="initial";
+
+}
+function dis2_1(){
+  document.getElementById("menuu").style.display="initial";
+}
+
     function dis(){
     
-      document.getElementById("navBar").style.display="initial";
-      document.getElementById("cross").style.display="initial";
-      document.getElementById("menuu").style.display="none";
-      document.getElementById("boxx").style.display="initial";
+      // document.getElementById("navBar").style.display="initial";
+      document.getElementById("navBar").style.transform="translateX(0%)"
+      document.getElementById("boxx").style.transform="translateX(0%)"
       document.getElementById("topBar").style.opacity = "0.2";
-    
       document.getElementById("mainBar").style.opacity = "0.4";
+      document.getElementById("menuu").style.display="none";
+      setTimeout(dis_1, 1000);
+      // document.getElementById("navBar").style.transition = "all 2s";
+
     }
     function dis2(){
     
-      document.getElementById("navBar").style.display="none";
+      // document.getElementById("navBar").style.display="none";
+
       document.getElementById("cross").style.display="none";
-      document.getElementById("menuu").style.display="initial";
-      document.getElementById("boxx").style.display="none";
+      document.getElementById("navBar").style.transform="translateX(-100%)"
+      document.getElementById("boxx").style.transform="translateX(-100%)"
       document.getElementById("topBar").style.opacity = "1";
-    
       document.getElementById("mainBar").style.opacity = "1";
+      setTimeout(dis2_1, 1000);
     }
